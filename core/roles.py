@@ -5,6 +5,7 @@ class People(AbstractUserRole):
         'make_transfer': True,
         'receive_transfer': True
     }
+    
 class Company(AbstractUserRole):
     available_permissions = {
         'make_transfer': False,
