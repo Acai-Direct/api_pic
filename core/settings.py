@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'rolepermissions',
     'users',
-    'payments'
+    'payments',
+    'django_q'
 ]
 AUTH_USER_MODEL = 'users.User'
 ROLEPERMISSIONS_MODULE = "core.roles"
@@ -126,3 +127,15 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+#TODO serviço autorizador
+#AUTHORIZE_TRNAFER_ENDPOINT = "https://run.mocky.io/v3/af7d2bd0-4126-4000-b5de-34df43717d75" #error 
+AUTHORIZE_TRNAFER_ENDPOINT = "https://run.mocky.io/v3/b7768310-47b4-4eb3-bdd1-2598e609403d" #success
+
+Q_CLUSTER = {
+    'name': 'DjangoQ',
+    'workers': 4,
+    'timeout': 60,
+    'retry': 300,
+    'orm': 'default'
+}

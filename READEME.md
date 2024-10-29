@@ -1,1 +1,1 @@
-## Criando o PICPAY SIMPLIFICADO com Python e Django | Desafio Back-end
+## Criando o PICPAY SIMPLIFICADO com Python e Django | Back-end
