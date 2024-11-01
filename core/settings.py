@@ -129,9 +129,9 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 #TODO serviço autorizador
-#AUTHORIZE_TRNAFER_ENDPOINT = "https://run.mocky.io/v3/af7d2bd0-4126-4000-b5de-34df43717d75" #error 
-AUTHORIZE_TRNAFER_ENDPOINT = "https://run.mocky.io/v3/b7768310-47b4-4eb3-bdd1-2598e609403d" #success
-
+AUTHORIZE_TRNAFER_ENDPOINT = "https://run.mocky.io/v3/af7d2bd0-4126-4000-b5de-34df43717d75" #error 
+#AUTHORIZE_TRNAFER_ENDPOINT = "https://run.mocky.io/v3/b7768310-47b4-4eb3-bdd1-2598e609403d" #success
+# erro ao enviar o POST o mocky esta fora do ar
 Q_CLUSTER = {
     'name': 'DjangoQ',
     'workers': 4,

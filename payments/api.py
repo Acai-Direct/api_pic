@@ -9,7 +9,6 @@ from django.conf import settings
 from .models import Transactions
 from django_q.tasks import async_task
 from .tasks import send_notification
-
 payments_router = Router()
 
 @payments_router.post('/', response={200:dict ,400:dict,403:dict})
